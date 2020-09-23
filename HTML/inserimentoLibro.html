@@ -1,0 +1,34 @@
+<h1>Inserisci un nuovo libro</h1>
+<form action="formInvioDatiInserimentoLibro.php" method="post">
+    <fieldset class="ins_mod_libro">
+        <legend>Inserimento libro</legend>
+        $ERROREFORMINSERIMENTOLIBRO$
+        <p>Ricordati che una volta inserito l'<abbr title="International Standard Book Number">ISBN</abbr> non è più possibile modificarlo, controlla attentamente quando lo inserisci. Inoltre, per rendere il sito accessibile delimita le parole inglesi nel modo [en] English word [/en]</p>
+        <p class="avviso_inserisci"></p>
+        <label for="isbn" xml:lang="en"><abbr title="International Standard Book Number">ISBN:</abbr></label>
+        <input onkeyup="controlloIsbn()" onchange="controlloIsbn()" onblur="controlloIsbn()" id="isbn" type="text" title="isbn" tabindex="16" name="isbn"/>
+        <p class="avviso_inserisci"></p>
+        <label for="titolo">Titolo:</label>
+        <textarea onkeyup="controlloTitolo()" onchange="controlloTitolo()" onblur="controlloTitolo()" id="titolo" rows="4" cols="50" title="trama" tabindex="17" name="titolo"></textarea>
+        <p class="avviso_inserisci"></p>
+        <label for="trama">Trama:</label>
+        <textarea onkeyup="controlloTrama()" onchange="controlloTrama()" onblur="controlloTrama()" id="trama" rows="8" cols="50" title="trama" tabindex="18" name="trama"></textarea>
+        <p class="avviso_inserisci"></p>
+        <label for="casa_editrice">Casa editrice:</label>
+        <textarea onkeyup="controlloCasaEditrice()" onchange="controlloCasaEditrice()" onblur="controlloCasaEditrice()" id="casa_editrice" rows="4" cols="50" title="trama" tabindex="19" name="casaEditrice"></textarea>
+        <label for="genere">Genere:</label>
+        <select id="genere" title="Inserisci genere" name="genere" tabindex="20">
+            <option value="" disabled="disabled">Genere</option>
+            <option value="horror" xml:lang="en">Horror</option>
+            <option value="fantasy" xml:lang="en">Fantasy</option>
+            <option value="rosa">Rosa</option>
+            <option value="gialli">Gialli</option>
+            <option value="classici">Classici</option>
+        </select>
+        <p class="avviso_inserisci"></p>
+        <label for="autore">Autori: (inserire i nomi separati da una virgola senza spazio)</label>
+        <textarea onkeyup="controlloAutori()" onchange="controlloAutori()" onblur="controlloAutori()" id="autore" rows="4" cols="50" title="trama" tabindex="21" name="autori"></textarea>
+        <button type="reset" onclick="bottoneReset()" tabindex="22" xml:lang="en">Reset</button>
+        <button id="inserimento_libro" type="submit" tabindex="23">Inserisci</button>
+    </fieldset>
+</form>

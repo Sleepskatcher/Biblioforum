@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+    <head>
+        <title>Registrati</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/style.css"/>
+        <link rel="stylesheet" type="text/css" href="../CSS/stampa.css"/>
+        <link rel="stylesheet" type="text/css" href="../CSS/device.css"/>
+         <script type="text/javascript" src="../JAVASCRIPT/formLoginSignUp.js"></script>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="description" content="Condividete le vostre opinioni sui libri a catalogo e interagite con altri utenti" />
+        <meta name="keywords" content="libro,libri,biblioteca,recensioni,lettura,leggere" />
+        <meta name="author" content="Stefano Cavaliere,Daniele Larosa,Margherita Mitillo" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+    </head>
+    <body onload="disattivaBottone()">
+        <div id="contenuto_ext">
+            <a href="indgen.php" tabindex="1" title="Link alla home">Torna alla <span xml:lang="en">home</span></a>
+            <h1 id="titolo_sign">Registrati</h1>
+            <form action="formInvioDatiSignup.php" method="post">
+                <fieldset class="field">
+                    $ERROREFORMSIGNUP$
+                    <legend xml:lang="en">Sign Up</legend>
+                    <p class="avviso_sign_up"></p>
+                    <label for="email" xml:lang="en">E-mail:</label>
+                    <input id="email" onchange="validateSignUpEmail()" onblur="validateSignUpEmail()" onkeyup="validateSignUpEmail()" type="text" title="email" tabindex="2" name="email"/>
+                    <p class="avviso_sign_up"></p>
+                    <label for="usernameS" xml:lang="en">Username:</label>
+                    <input id="usernameS" onchange="validateUsernameS()" onblur="validateUsernameS()" onkeyup="validateUsernameS()" type="text" title="username" tabindex="3" name="username"/>
+                    <p class="avviso_sign_up"></p>
+                    <label for="passwordS" xml:lang="en">Password:</label>
+                    <input id="passwordS" onchange="validatePasswordS()" onblur="validatePasswordS()" onkeyup="validatePasswordS()" type="password" title="password" tabindex="4" name="password"/>
+                    <p class="avviso_sign_up"></p>
+                    <label for="ripetiPass">Ripeti <span xml:lang="en">password:</span></label>
+                    <input id="ripetiPass" onchange="validateRipetiPass()" onblur="validateRipetiPass()" onkeyup="validateRipetiPass()" type="password" title="ripetipasword" tabindex="5" name="ripetiPassword"/>
+                    <button type="submit" tabindex="6">Registrati</button>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

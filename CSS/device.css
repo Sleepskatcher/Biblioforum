@@ -1,0 +1,562 @@
+@media screen and (max-width:1900px) {
+    #freccia {
+        right: 21em;
+    }
+}
+
+@media screen and (max-width:1850px) {
+    #freccia {
+        right: 19.5em;
+    }
+}
+
+
+@media screen and (max-width:1800px) {
+    #freccia {
+        right: 18em;
+    }
+}
+
+@media screen and (max-width:1750px) {
+    #freccia {
+        right: 16.5em;
+    }
+}
+
+
+@media screen and (max-width:1700px) {
+    #freccia {
+        right: 14.5em;
+    }
+}
+
+@media screen and (max-width:1650px) {
+    #freccia {
+        right: 13.5em;
+    }
+}
+
+@media screen and (max-width:1600px) {
+    #freccia {
+        right: 12.5em;
+    }
+}
+
+@media screen and (max-width:1550px) {
+    #freccia {
+        right: 12em;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    #freccia {
+        right: 8em;
+    }
+}
+
+@media screen and (max-width:1450px) {
+    #freccia {
+        right: 7em;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    #freccia {
+        right: 5em;
+    }
+}
+
+@media screen and (max-width:1350px) {
+    #freccia {
+        right: 3em;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    #freccia {
+        right: 1em;
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+    #freccia {
+        right: 0em;
+    }
+
+    /*HEADER*/
+    #header #log_sign_search form fieldset {
+        margin-left: 16em;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+
+    html {
+        background: none;
+    }
+
+    #freccia {
+        right: 0em;
+    }
+
+    /*HEADER*/
+
+    #header h1 {
+        padding-left: 1em;
+    }
+
+    #header img+a {
+        padding-left: 1em;
+    }
+
+    #header #log_sign_search form fieldset {
+        margin-left: 13em;
+    }
+
+    #header #log_sign_search a {
+        margin-left: 17em;
+    }
+
+    /*CATEGORIE LIBRI*/
+
+    #libri li {
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width:970px) {
+    /*HEADER*/
+    #header #log_sign_search a {
+        margin-left: 15em;
+    }
+
+    #info ul {
+        padding-left: 0em;
+    }
+
+    #social {
+        width: 50%;
+    }
+
+    #social ul {
+        padding-left: 0em;
+    }
+
+    #social ul li {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+}
+
+@media screen and (max-width:900px) {
+
+    /*HEADER*/
+
+    #header h1 {
+        padding-left: 0.5em;
+    }
+
+    #header img+a {
+        padding-left: 0.5em;
+    }
+
+    #header #log_sign_search a {
+        margin-left: 14em;
+    }
+
+    #header #log_sign_search form fieldset {
+        margin-left: 12em;
+    }
+
+    /*PAGINA LIBRO*/
+
+    #info_libro li:nth-child(1) {
+        width: 40%;
+    }
+
+    #freccia {
+        width:2.5em;
+        height: 3.5em;
+    }
+
+    /*FOOTER*/
+
+    #info ul {
+        padding-left: 0em;
+    }
+
+    /*LOGIN, REGISTRAZIONE E PAGINA UTENTE*/
+
+    #contenuto_ext #titolo_sign {
+        margin: 0% 25% 2% 25%;
+    }
+}
+
+@media screen and (max-width:850px) {
+    /*HEADER*/
+
+    #header h1 {
+        font-size: 2.5em;
+    }
+
+    #header img+a {
+        font-size: 2.5em;
+    }
+
+    #header #log_sign_search a {
+        margin-left: 12em;
+    }
+
+    #header #log_sign_search form fieldset {
+        margin-left: 10em;
+    }
+
+    /*PAGINA LOGIN, REGISTRAZIONE, UTENTE*/
+
+    #contenuto_ext .field {
+        margin: 0% 20% 0% 20%;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    /*HEADER*/
+
+    #header #log_sign_search a {
+        margin-left: 10em;
+    }
+
+    #header #log_sign_search form fieldset {
+        margin-left: 9em;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    /*HEADER*/
+
+    #header img {
+        width: 5em;
+    }
+
+    #header #log_sign_search form fieldset {
+        margin-left: 7em;
+    }
+
+    #contenuto {
+        width: 100%;
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+
+    /*PAGINA LIBRO*/
+
+    #info_libro li:nth-child(1) {
+        width: 30%;
+    }
+
+    /*LOGIN, REGISTRAZIONE E PAGINA UTENTE*/
+
+    #contenuto_ext #titolo_log {
+        margin: 0% 30% 2% 30%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    /*HEADER*/
+
+    #header #log_sign_search a {
+        margin-left: 8em;
+    }
+
+    #header #log_sign_search form fieldset {
+        margin-left: 5em;
+    }
+}
+
+@media screen and (max-width:650px) {
+    /*HEADER*/
+    #header h1 {
+        padding-left: 0em;
+    }
+
+    #header img+a {
+        padding-left: 0em;
+    }
+
+    #header #log_sign_search a {
+        margin-left: 7em;
+    }
+
+    #header #log_sign_search form fieldset {
+        margin-left: 4em;
+    }
+
+    /*FOOTER*/
+
+    #social {
+        padding-right: 0em;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    /*HAMBURGER*/
+
+    #no_footer #menu_ham {
+        display: block;
+    }
+
+    /*HEADER*/
+    #header img[alt="Logo del sito"] {
+        display: none;
+    }
+
+    #header img+a {
+        width: 100%;
+        text-align: center;
+    }
+
+    #header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #header #log_sign_search {
+        width: 100%;
+        float: none;
+        padding-left: 0em;
+    }
+
+    #header button img {
+        width: 1em;
+        height: 1em;
+    }
+
+    #header #log_sign_search a {
+        margin-left: 12em;
+    }
+
+    #header #log_sign_search form fieldset {
+        margin-left: 11em;
+    }
+
+    /*MENU*/
+
+    #menu {
+        display: none;
+        position: absolute;
+        z-index: 55;
+        width: 40%;
+        top: 0.55em;
+    }
+
+    #menu li {
+        display: none;
+    }
+
+    /*LIBRI*/
+
+    #info_libro li:nth-child(1) {
+        float: none;
+        width: 100%;
+    }
+
+    #libri li {
+        width: 60%;
+        margin-left: 15%;
+    }
+
+    dl dd ul li img {
+        width: 50%;
+    }
+
+    /*FOOTER*/
+
+    #social {
+        float: none;
+        width: 75%;
+        padding-left: 25%;
+    }
+
+    #info {
+        width: 90%;
+        text-align: center;
+    }
+
+    #footer ul #social ul {
+        padding-left: 0em;
+    }
+
+    #footer ul #social ul li {
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+
+    #footer {
+        height: 13em;
+    }
+
+    #validatori {
+        margin-left: 25%;
+    }
+
+    #validatori ul li {
+        display: inline-block;
+    }
+
+    /*LOGIN, REGISTRAZIONE E PAGINA UTENTE*/
+
+    #contenuto_ext .field {
+        padding: 0.2em 0.5em 0.8em 0.5em;
+        margin: 0% 20% 0% 20%;
+    }
+
+    #contenuto_ext #titolo_log {
+        font-size: 2.5em;
+        margin: 0% 20% 2% 20%;
+    }
+
+    #contenuto_ext #titolo_sign {
+        font-size: 2.5em;
+        margin: 0% 15% 2% 15%;
+    }
+
+    #contenuto_ext #titolo_user {
+        font-size: 2.5em;
+        margin: 0% 15% 2% 15%;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    /*HEADER*/
+
+    #header #log_sign_search a {
+        margin-left: 6em;
+    }
+
+     #header #log_sign_search form fieldset {
+        margin-left: 6em;
+    }
+}
+
+@media screen and (max-width:425px) {
+
+    /*HEADER*/
+
+    #header {
+        display: block;
+    }
+
+    #header img {
+        width: 6em;
+    }
+
+    #header h1 {
+        padding-left: 0em;
+        float: left;
+    }
+
+    #header img+a {
+        padding-left: 0em;
+        float: left;
+    }
+
+    #header #log_sign_search a {
+        margin-left: 7em;
+    }
+
+    #header #log_sign_search form fieldset {
+        margin-left: 5em;
+    }
+
+    /*CONTENUTO CENTRALE*/
+
+    #benvenuto {
+        width: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    /*FOOTER*/
+
+    #social {
+        padding-left: 14%;
+    }
+
+    #validatori {
+        margin-left: 15%;
+    }
+
+    /*LOGIN, REGISTRAZIONE E PAGINA UTENTE*/
+
+    #contenuto_ext #titolo_log {
+        margin: 0% 15% 0% 15%;
+        padding-bottom: 0.3em;
+    }
+
+    #contenuto_ext #titolo_sign {
+        font-size: 2.5em;
+        margin: 0% 10% 0% 10%;
+        padding-bottom: 0.3em;
+    }
+
+    #contenuto_ext .field {
+        margin: 0% 15% 0% 15%;
+    }
+}
+
+@media screen and (max-width:350px) {
+    /*FOOTER*/
+    #validatori {
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    /*HEADER*/
+
+    #header h1 {
+        width: 100%;
+    }
+
+    #header #log_sign_search {
+        padding-left: 0.1em;
+    }
+
+    #header #log_sign_search a {
+        margin-left: 4em;
+    }
+
+    #header #log_sign_search form fieldset {
+        margin-left: 2em;
+    }
+
+    /*PAGINA CENTRALE*/
+
+    #contenuto {
+        width: 100%;
+    }
+
+    /*RECENSIONI*/
+
+    #tutte_le_recensioni {
+        width: 100%;
+    }
+
+    /*FOOTER*/
+
+    #social {
+        width: 100%;
+    }
+
+    #validatori {
+        margin-left: 13%;
+    }
+
+}

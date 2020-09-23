@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+    <head>
+        <title>Accedi</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/style.css"/>
+        <link rel="stylesheet" type="text/css" href="../CSS/stampa.css"/>
+        <link rel="stylesheet" type="text/css" href="../CSS/device.css"/>
+        <script type="text/javascript" src="../JAVASCRIPT/formLoginSignUp.js"></script>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="description" content="Condividete le vostre opinioni sui libri a catalogo e interagite con altri utenti" />
+        <meta name="keywords" content="libro,libri,biblioteca,recensioni,lettura,leggere" />
+        <meta name="author" content="Stefano Cavaliere,Daniele Larosa,Margherita Mitillo" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+    </head>
+    <body onload="disattivaBottone()">
+        <div id="contenuto_ext">
+            <a href="indgen.php" tabindex="1" title="Link alla home">Torna alla <span xml:lang="en">home</span></a>
+            <h1 id="titolo_log">Login</h1>
+            <form action="formInvioDatiLogin.php" method="post">
+                <fieldset class="field">
+                    $ERRORELOGINUSERNAME-PASSWORD$
+                    <legend xml:lang="en">Login</legend>
+                    <p class="avviso_log"></p>
+                    <label for="username" xml:lang="en">Username:</label>
+                    <input  id="username" onchange="validateLogUsername()" onblur="validateLogUsername()" onkeyup="validateLogUsername()" type="text" title="username" tabindex="2" name="username"/>
+                    <p class="avviso_log"></p>
+                    <label for="password" xml:lang="en">Password:</label>
+                    <input id="password" onchange="validateLogPassword()" onblur="validateLogPassword()" onkeyup="validateLogPassword()" type="password" title="password" tabindex="3" name="password"/>
+                    <button type="submit" tabindex="4" xml:lang="en">Login</button>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

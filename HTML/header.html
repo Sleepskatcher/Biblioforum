@@ -1,0 +1,15 @@
+<img src="../pictures/logo.png" alt="Logo del sito"/>
+$LOGO$
+<div id="log_sign_search">
+    $LOGIN$
+    $SIGNUP$
+    <form action="indgen.php" method="get">
+        <fieldset class="field">
+            <legend>Ricerca</legend>
+            <input onkeyup="bottoneRicerca()" onchange="bottoneRicerca()" onblur="bottoneRicerca()" type="text" tabindex="5" name="ricerca" />
+            <input type="hidden" name="inizio" value="0"/>
+            <input type="hidden" name="fine" value="10"/>
+            <button type="submit" title="bottonericerca" tabindex="6"><img src="../pictures/lente.png" alt="Lente d'ingrandimento"/></button>
+        </fieldset>
+    </form>
+</div>

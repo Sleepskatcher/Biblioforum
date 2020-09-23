@@ -1,0 +1,18 @@
+<li class="recensioni_admin">
+    <form action="eliminaCommento.php" method="post">
+        <fieldset>
+            <legend>Elimina recensione</legend>
+            <ul>
+                <li>$NOMEUTENTE$</li>
+                <li>$DATAORA$</li>
+                <li>$TESTOCOMMENTO$</li>
+            </ul>
+            <input type="hidden" name="idcommento" value="$VIDCOMMENTO$"/>
+            <input type="hidden" name="genere" value="$VADMINGENERE$"/>
+            <input type="hidden" name="inizio" value="$VADMININIZIO$"/>
+            <input type="hidden" name="fine" value="$VADMINFINE$"/>
+            <input type="hidden" name="isbn" value="$VADMINISBN$"/>
+            <button type="submit" tabindex="$TABINDEXADMINELIMINACOMMENTO$">Elimina recensione</button>
+        </fieldset>
+    </form>
+</li>

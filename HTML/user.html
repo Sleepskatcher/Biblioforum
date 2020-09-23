@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it" xml:lang="it">
+    <head>
+        <title>Modifica informazioni utente</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/style.css"/>
+        <link rel="stylesheet" type="text/css" href="../CSS/stampa.css"/>
+        <link rel="stylesheet" type="text/css" href="../CSS/device.css"/>
+        <script type="text/javascript" src="../JAVASCRIPT/formPaginaUtente.js"></script>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="description" content="Condividete le vostre opinioni sui libri a catalogo e interagite con altri utenti" />
+        <meta name="keywords" content="libro,libri,biblioteca,recensioni,lettura,leggere" />
+        <meta name="author" content="Stefano Cavaliere,Daniele Larosa,Margherita Mitillo" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+    </head>
+    <body onload="disattivaBottoneUtente()">
+        <div id="contenuto_ext">
+            <a href="indgen.php" tabindex="1">Torna alla home</a>
+            <h1 id="titolo_user">$NOMECOGNOMEUTENTE$</h1>
+            <form action="modificaProfilo.php" method="post">
+                <fieldset class="field">
+                    <legend>Modifica dati</legend>
+                    $ERROREUSER$
+                    <p>Qui puoi cambiare l'<span xml:lang="en">email</span> o la <span xml:lang="en">password</span> o entrambi.</p>
+                    <label for="email_attuale"><span xml:lang="en">Email</span> attuale:</label>
+                    <input id="email_attuale" disabled="disabled" value="$EMAILATTUALE$"/>
+                    <p class="avviso_cambio"></p>
+                    <label for="cambia_email">Cambia <span xml:lang="en">email</span>:</label>
+                    <input onblur="controlloCambioEmail()" onchange="controlloCambioEmail()" onkeyup="controlloCambioEmail()" id="cambia_email" type="text" title="email" tabindex="2" name="email"/>
+                    <p class="avviso_cambio"></p>
+                    <label for="cambia_password">Cambia <span xml:lang="en">password</span>:</label>
+                    <input onblur="controlloCambioPassword()" onchange="controlloCambioPassword()" onkeyup="controlloCambioPassword()" id="cambia_password" type="password" title="password" tabindex="3" name="password"/>
+                    <p class="avviso_cambio"></p>
+                    <label for="ripeti_password" xml:lang="en">Ripeti <span xml:lang="en">password</span>:</label>
+                    <input onblur="controlloRipetiCambioPassword()" onchange="controlloRipetiCambioPassword()" onkeyup="controlloRipetiCambioPassword()" id="ripeti_password" type="password" title="ripetiPassword" tabindex="4" name="ripetiPassword"/>
+                    <button type="submit" tabindex="5">Conferma</button>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

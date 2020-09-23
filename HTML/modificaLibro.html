@@ -1,0 +1,38 @@
+<h1>Modifica libro</h1>
+<form action="formInvioDatiModificaLibro.php" method="post">
+    <fieldset class="ins_mod_libro">
+        <legend>Modifica libro</legend>
+        $ERROREFORMMODIFICALIBRO$
+        <p>Se non devi modificare nulla non schiacciare su conferma modifica, torna semplicemente indietro! Inoltre ricordati che per rendere il sito accessibile bisogna delimitare le parole inglesi nel modo [en] English word [/en]</p>
+        <p>Non è possibile modificare l'<span xml:lang="en"><abbr title="International Standard Book Number">ISBN</abbr></span>. Contatta chi ha creato il sito se devi modificarlo.</p>
+        <p class="avviso_modifica"></p>
+        <label for="isbn_modifica" xml:lang="en"><abbr title="International Standard Book Number">ISBN</abbr>:</label>
+        <input onkeyup="controlloIsbnModifica()" onchange="controlloIsbnModifica()" onblur="controlloIsbnModifica()" id="isbn_modifica" type="text" title="isbn" tabindex="16" name="isbn" value="$VISBN$" readonly="readonly"/>
+        <input type="hidden" value="$VECCHIOISBN$" name="vecchioIsbn"/>
+        <p class="avviso_modifica"></p>
+        <label for="titolo_modifica">Titolo:</label>
+        <textarea onkeyup="controlloTitoloModifica()" onchange="controlloTitoloModifica()" onblur="controlloTitoloModifica()" id="titolo_modifica" rows="4" cols="50" title="trama" tabindex="17" name="titolo">$VTITOLO$</textarea>
+        <p class="avviso_modifica"></p>
+        <label for="trama_modifica">Trama:</label>
+        <textarea onkeyup="controlloTramaModifica()" onchange="controlloTramaModifica()" onblur="controlloTramaModifica()" id="trama_modifica" rows="8" cols="50" title="trama" tabindex="18" name="trama">$VTRAMA$</textarea>
+        <p class="avviso_modifica"></p>
+        <label for="casa_modifica">Casa editrice:</label>
+        <textarea onkeyup="controlloCasaEditriceModifica()" onchange="controlloCasaEditriceModifica()" onblur="controlloCasaEditriceModifica()" id="casa_modifica" rows="4" cols="50" title="trama" tabindex="19" name="casaEditrice">$VCASAEDITRICE$</textarea>
+        <label for="genere_modifica">Genere:</label>
+        <select id="genere_modifica" title="Inserisci genere" name="genere" tabindex="20">
+            <option value="" disabled="disabled">Genere</option>
+            <option value="horror" xml:lang="en" $SELECTHORROR$>Horror</option>
+            <option value="fantasy" xml:lang="en" $SELECTFANTASY$>Fantasy</option>
+            <option value="rosa" $SELECTROSA$>Rosa</option>
+            <option value="gialli" $SELECTGIALLI$>Gialli</option>
+            <option value="classici" $SELECTCLASSICI$>Classici</option>
+        </select>
+        <input type="hidden" value="$VECCHIOGENERE$" name="vecchioGenere"/>
+        <p class="avviso_modifica"></p>
+        <label for="autori_modifica">Autori: (inserire i nomi separati da una virgola senza spazio)</label>
+        <textarea onkeyup="controlloAutoriModifica()" onchange="controlloAutoriModifica()" onblur="controlloAutoriModifica()" id="autori_modifica" rows="4" cols="50" title="trama" tabindex="21" name="autori">$VAUTORI$</textarea>
+        <input type="hidden" value="$INIZIO$" name="inizio"/>
+        <input type="hidden" value="$FINE$" name="fine"/>
+        <button id="conferma_modifica" type="submit" tabindex="22">Conferma modifiche</button>
+    </fieldset>
+</form>

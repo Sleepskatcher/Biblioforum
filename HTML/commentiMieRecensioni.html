@@ -1,0 +1,31 @@
+<li>
+    <ul>
+        <li>
+            <form action="modificaCommento.php" method="post">
+                <fieldset>
+                    <legend>Modifica</legend>
+                    <ul>
+                        <li>$TITOLO$</li>
+                        <li>$GENERE$</li>
+                        <li>$AUTORI$</li>
+                        <li>$DATAORA$</li>
+                    </ul>
+                    <p class="avviso_modifica_recensione"></p>
+                    <textarea onclick="trovaNumero()" onkeyup="controlloModificaRecensione()" onchange="controlloModificaRecensione()" onblur="controlloModificaRecensione()" class="modifica_recensione_utente" rows="12" cols="100" name="commento" tabindex="$TAB1$">$COMMENTO$</textarea>
+                    <input type="hidden" name="idcommento" value="$VIDCOMMENTO1$"/>
+                    <button class="bottone_modifica_recensione" type="submit" tabindex="$TAB2$">Modifica recensione</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <form action="eliminaCommento.php" method="post">
+                <fieldset>
+                    <legend>Elimina</legend>
+                    <input type="hidden" name="idcommento" value="$VIDCOMMENTO2$"/>
+                    <button type="submit" tabindex="$TAB3$">Elimina recensione</button>
+                </fieldset>
+            </form>
+        </li>
+    </ul>
+
+</li>

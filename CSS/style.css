@@ -1,0 +1,669 @@
+/*GENERICO*/
+
+html {
+    font-family: sans-serif;
+    color: #000000;
+    background-image: url(../pictures/pattern-libri.jpg);
+    background-repeat: repeat;
+    text-align: justify;
+}
+
+body {
+    position: relative;
+    background-color: #ECECEC;
+    max-width: 1200px;
+    margin: 0em auto 0em auto;
+}
+
+a {
+    text-decoration: none;
+    color: #0036D6;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+    background-color: #F3D250;
+    color: #7B0909;
+}
+
+a:visited {
+    color: #001452;
+}
+
+h1 {
+    text-align: center;
+}
+
+legend {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#link_salta {
+    position: absolute;
+    top: -3em;
+    left: 0em;
+    text-transform: uppercase;
+}
+
+#link_salta:focus{
+    top:0;
+}
+
+#no_footer {
+    min-height: 100vh;
+    padding-bottom: 10em;
+    display: flex;
+    position: relative;
+    background-color: #ECECEC;
+}
+
+#no_footer #menu_ham {
+    display: none;
+    height: 1.5em;
+    width: 1.5em;
+}
+
+textarea {
+    overflow: auto;
+    height: auto;
+    resize: none;
+    min-height: 3em;
+}
+
+.avviso_php, .avviso_sign_up, .avviso_log, .avviso_inserisci, .avviso_modifica, .avviso_cambio, #avviso_recensione {
+    text-transform: uppercase;
+    color: #990B0B;
+    font-weight: bold;
+}
+
+.errore_404 {
+    width: 100%;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.errore_404+img {
+    height: auto;
+    width: 40%;
+    margin: 2% 30% 2% 30%;
+}
+
+/*HEADER*/
+
+#header {
+    width: 100%;
+    top: 0em;
+    bottom: 0em;
+    display: inline-block;
+    border-bottom: solid 0.08em #000000;
+}
+
+#header h1 {
+    width: 30%;
+    font-size: 3em;
+    float: left;
+    text-transform: uppercase;
+    padding-left: 1.5em;
+    color: #000000;
+    margin-top:0.75em;
+}
+
+#header img+a {
+    width: 30%;
+    font-size: 3em;
+    float: left;
+    text-transform: uppercase;
+    padding-left: 1.5em;
+    color: #000000;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 0.75em;
+}
+
+#header #log_sign_search {
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+    float: right;
+}
+
+#header #log_sign_search a {
+    text-transform: uppercase;
+    margin-left: 20em;
+}
+
+#header #log_sign_search a+a {
+    margin-left: 1em;
+}
+
+#header #log_sign_search form {
+    width: 100%;
+    float: right;
+}
+
+#header #log_sign_search form fieldset {
+    border: none;
+    margin-left: 20em;
+    margin-top: 0.5em;
+    display: inline;
+}
+
+#header #log_sign_search form fieldset input[type=text] {
+    border-radius: 0.75em;
+}
+
+#header img {
+    width: 7.8em;
+    float: left;
+}
+
+#header button {
+    border-radius: 0.75em;
+    width: 3em;
+    height: 3em;
+    padding: 0;
+}
+
+#header button img {
+    float: none;
+    width: 2em;
+    height: 2em;
+}
+
+/*MENU*/
+
+#menu {
+    position: relative;
+    left: 0.2em;
+    width: 20%;
+    padding-left: 0em;
+    background-color: #F5CCCC;
+}
+
+#menu a {
+    color: #002DB3;
+}
+
+#menu li {
+    position: relative;
+    padding:0.5em;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: solid 0.04em #000000;
+    list-style-type: none;
+}
+
+#menu li a {
+    width:100%;
+    height: 100%;
+}
+
+#menu li:last-child {
+    border-bottom: solid 0.04em #000000;
+}
+
+#menu li:hover {
+    background-color: #B6696A;
+}
+
+#menu #non_cliccabile {
+    background-color: #F3D250;
+}
+
+/*CONTENUTO CENTRALE*/
+
+#menu+div {
+    position: relative;
+    width: 80%;
+    margin-bottom: 4em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.breadcrumb {
+    margin: 0em;
+    text-transform: uppercase;
+}
+
+#freccia {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    width: 3em;
+    height: 4em;
+    right: 22em;
+}
+
+#freccia:hover {
+    cursor: pointer;
+}
+
+#contenuto {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    margin-bottom: 0.2em;
+    display: inline-block;
+}
+
+#contenuto #field_admin {
+    margin-left: 40%;
+    margin-right: 40%;
+    border: none;
+}
+
+#contenuto #field_admin button {
+    border-radius: 0.75em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#benvenuto {
+    width: 80%;
+    padding-left: 10%;
+    height: auto;
+}
+
+#presentazione {
+    font-size: 1.5em;
+}
+
+#libri {
+    padding-left: 0em;
+}
+
+#libri li {
+    text-align: center;
+    background-color: #F5CCCC;
+    text-transform: uppercase;
+    margin: 0.3em 0.5em 0.3em 0.5em;
+    display: inline-block;
+    width: 45%;
+    border: solid 0.04em #000000;
+    border-radius: 1.5em;
+    padding: 0.5em;
+}
+
+#libri+p>a {
+    text-transform: uppercase;
+}
+
+/*LISTA LIBRI*/
+
+dl dd ul {
+    font-size: 1.2em;
+    padding-left: 0em;
+}
+
+dl dt {
+    text-transform: uppercase;
+}
+
+dl dd ul li img {
+    height: auto;
+    width: 20%;
+}
+
+/*STATISTICHE*/
+
+#titolo_statistiche {
+    font-size: 2.2em;
+}
+
+#statistiche {
+    padding-left: 0em;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#statistiche + img {
+    height: auto;
+    width:40%;
+    margin-left:20%;
+    margin-right:20%;
+    padding-right:10%;
+    padding-left:10%;
+}
+
+/*INSERIMENTO E MODIFICA*/
+
+.ins_mod_libro {
+    border-radius: 1.5em;
+    border-color: #F3D250;
+}
+
+.ins_mod_libro input {
+    width: 50%;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    border-radius: 1em;
+}
+
+.ins_mod_libro label+input {
+    display: block;
+}
+
+.ins_mod_libro select {
+    display: block;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    border-radius: 1em;
+}
+
+.ins_mod_libro textarea[name=trama] {
+    height: 18em;
+}
+
+.ins_mod_libro label+select {
+    display: block;
+}
+
+.ins_mod_libro select+label {
+    display: block;
+}
+
+.ins_mod_libro textarea {
+    border-radius: 1em;
+}
+
+.ins_mod_libro label+textarea {
+    display: block;
+    width: 100%;
+}
+
+.ins_mod_libro textarea+button {
+    margin-left: 40%;
+}
+
+.ins_mod_libro button {
+    border-radius: 0.75em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#pag_succ {
+    display: inline-block;
+    float: right;
+    padding-right: 3em;
+    right: 0em;
+}
+
+#pag_prec {
+    display: inline-block;
+    float: left;
+}
+
+#pag_prec, #pag_succ {
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0em;
+}
+
+/*PAGINA LIBRO*/
+
+#info_libro {
+    padding-left: 0em;
+    padding-bottom: 1em;
+}
+
+#info_libro li:nth-child(1) {
+    float: left;
+}
+
+#info_libro li img {
+    height: auto;
+    width: 90%;
+}
+
+#info_libro li:not(:first-of-type) {
+    padding-top: 0.7em;
+    padding-right: 1em;
+}
+
+#info_libro+h2 {
+    width: 100%;
+    text-transform: uppercase;
+    float: left;
+    margin-bottom: 0.4em;
+}
+
+#info_libro+h2+p {
+    float: left;
+    margin-top: 0.3em;
+}
+
+#lista_commenti {
+    width: 90%;
+    float: left;
+    padding-left: 0em;
+}
+
+#lista_commenti>li {
+    padding-bottom: 0.4em;
+}
+
+#lista_commenti li ul li:nth-child(1) {
+    color: #990B0B;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#lista_commenti .recensioni_admin fieldset {
+    border: none;
+}
+
+#lista_commenti .recensioni_admin button {
+    border-radius: 0.75em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 40%;
+    margin-left:40%;
+}
+
+#mostra_altri, #mostra_altri_recensioni {
+    float: left;
+    border-radius: 0.75em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+/*COMMENTI*/
+
+#commento {
+    float: left;
+    border: none;
+    text-align: left;
+}
+
+#commento textarea {
+    width: 100%;
+}
+
+#commento textarea{
+    border-radius: 1em;
+}
+
+#commento button {
+    margin-top: 0.6em;
+    border-radius: 1.5em;
+    border-radius: 0.75em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*MIE RECENSIONI*/
+
+#tutte_recensioni {
+    padding-left: 0.3em;
+}
+
+#tutte_recensioni li {
+    margin-bottom: 0.3em;
+}
+
+#tutte_recensioni li ul {
+    padding-left: 0em;
+    padding-right: 0.5em;
+}
+
+#tutte_recensioni li ul li {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+#tutte_recensioni li ul li fieldset{
+    border-radius: 1.5em;
+    padding-bottom: 0.4em;
+    border-color: #F3D250;
+}
+
+#tutte_recensioni li ul li ul li {
+    padding: 0.2em;
+}
+
+#tutte_recensioni li ul li textarea {
+    width: 100%;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    border-radius: 1em;
+}
+
+#tutte_recensioni button {
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
+    border-radius: 0.75em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#tutte_recensioni li ul li+li fieldset {
+    border:none;
+}
+
+/*FOOTER*/
+
+#footer {
+    position: absolute;
+    bottom: 0em;
+    height: 8em;
+    border-top: solid 0.08em #000000;
+    width: 100%;
+    margin-bottom: 0em;
+}
+
+#footer ul li {
+    list-style-type: none;
+}
+
+#footer ul li img {
+    width: 4em;
+    height: auto;
+}
+
+#info ul li {
+    display: block;
+}
+
+#info {
+    float: left;
+}
+
+#validatori {
+    margin-left: 40%;
+}
+
+#social {
+    padding-right: 2em;
+    float: right;
+}
+
+#social ul li {
+    padding-right: 1.4em;
+    padding-left: 1.4em;
+    display: inline-block;
+}
+
+#social ul li img {
+    display: block;
+}
+
+/*LOGIN, REGISTRAZIONE E PAGINA UTENTE*/
+
+#contenuto_ext {
+    min-height: 100vh;
+}
+
+#contenuto_ext a {
+    display: inline-block;
+    padding-left: 0.2em;
+    padding-top: 0.2em;
+}
+
+#contenuto_ext #titolo_log {
+    padding: 0.1em 0.6em 0.1em 0.6em;
+    text-transform: uppercase;
+    color: #990B0B;
+    text-align: center;
+    font-size: 3.5em;
+    margin: 0% 40% 2% 40%;
+}
+
+#contenuto_ext #titolo_sign {
+    padding: 0.1em 0.6em 0.1em 0.6em;
+    text-transform: uppercase;
+    color: #990B0B;
+    text-align: center;
+    font-size: 3.5em;
+    margin: 0% 35% 2% 35%;
+}
+
+#contenuto_ext #titolo_user {
+    padding: 0.1em 0.6em 0.1em 0.6em;
+    text-transform: uppercase;
+    color: #990B0B;
+    text-align: center;
+    font-size: 3.5em;
+    margin: 0% 40% 2% 40%;
+}
+
+#contenuto_ext label {
+    text-transform: uppercase;
+    margin: 0.5em 0em 0.5em 0em;
+}
+
+#contenuto_ext input {
+    border-radius: 1em;
+    font-size: 1.2em;
+    width: 100%;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+#contenuto_ext button {
+    margin-top: 1em;
+    width: 100%;
+    border-radius: 0.75em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#contenuto_ext .field {
+    border-radius: 1.5em;
+    padding: 2em 3em 2em 3em;
+    margin: 0% 30% 0% 30%;
+    border-color: #F3D250;
+    text-align: left;
+}
